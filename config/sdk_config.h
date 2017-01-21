@@ -2739,7 +2739,7 @@
 // <e> UART_CONFIG_LOG_ENABLED - Enables logging in the module.
 //==========================================================
 #ifndef UART_CONFIG_LOG_ENABLED
-#define UART_CONFIG_LOG_ENABLED 0
+#define UART_CONFIG_LOG_ENABLED 1
 #endif
 #if  UART_CONFIG_LOG_ENABLED
 // <o> UART_CONFIG_LOG_LEVEL  - Default Severity level
@@ -2767,7 +2767,7 @@
 // <8=> White 
 
 #ifndef UART_CONFIG_INFO_COLOR
-#define UART_CONFIG_INFO_COLOR 0
+#define UART_CONFIG_INFO_COLOR 3
 #endif
 
 // <o> UART_CONFIG_DEBUG_COLOR  - ANSI escape code prefix.
@@ -2783,7 +2783,7 @@
 // <8=> White 
 
 #ifndef UART_CONFIG_DEBUG_COLOR
-#define UART_CONFIG_DEBUG_COLOR 0
+#define UART_CONFIG_DEBUG_COLOR 4
 #endif
 
 #endif //UART_CONFIG_LOG_ENABLED
@@ -3252,12 +3252,12 @@
 
 // <o> HCI_UART_RTS_PIN - UART RTS pin 
 #ifndef HCI_UART_RTS_PIN
-#define HCI_UART_RTS_PIN 5
+#define HCI_UART_RTS_PIN 9
 #endif
 
 // <o> HCI_UART_CTS_PIN - UART CTS pin 
 #ifndef HCI_UART_CTS_PIN
-#define HCI_UART_CTS_PIN 7
+#define HCI_UART_CTS_PIN 10
 #endif
 
 #endif //HCI_SLIP_ENABLED
@@ -3636,22 +3636,22 @@
 
 // <o> NRF_LOG_BACKEND_SERIAL_UART_TX_PIN - UART TX pin 
 #ifndef NRF_LOG_BACKEND_SERIAL_UART_TX_PIN
-#define NRF_LOG_BACKEND_SERIAL_UART_TX_PIN 38 // 38 or gpio 26?
+#define NRF_LOG_BACKEND_SERIAL_UART_TX_PIN 26 // 38 or gpio 26?
 #endif
 
 // <o> NRF_LOG_BACKEND_SERIAL_UART_RX_PIN - UART RX pin 
 #ifndef NRF_LOG_BACKEND_SERIAL_UART_RX_PIN
-#define NRF_LOG_BACKEND_SERIAL_UART_RX_PIN 39 // 39 or gpio 27?
+#define NRF_LOG_BACKEND_SERIAL_UART_RX_PIN 27 // 39 or gpio 27?
 #endif
 
 // <o> NRF_LOG_BACKEND_SERIAL_UART_RTS_PIN - UART RTS pin 
 #ifndef NRF_LOG_BACKEND_SERIAL_UART_RTS_PIN
-#define NRF_LOG_BACKEND_SERIAL_UART_RTS_PIN 5
+#define NRF_LOG_BACKEND_SERIAL_UART_RTS_PIN 9
 #endif
 
 // <o> NRF_LOG_BACKEND_SERIAL_UART_CTS_PIN - UART CTS pin 
 #ifndef NRF_LOG_BACKEND_SERIAL_UART_CTS_PIN
-#define NRF_LOG_BACKEND_SERIAL_UART_CTS_PIN 6
+#define NRF_LOG_BACKEND_SERIAL_UART_CTS_PIN 10
 #endif
 
 // <o> NRF_LOG_BACKEND_SERIAL_UART_FLOW_CONTROL  - Hardware Flow Control
