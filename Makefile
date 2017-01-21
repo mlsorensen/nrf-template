@@ -235,6 +235,6 @@ erase:
 	nrfjprog --eraseall -f nrf52
 
 logtail:
-	/Applications/SEGGER/JLink_V612f/JLinkExe -device NRF52832_XXAA -if SWD -speed 4000 -autoconnect 1 &
+	JLinkExe -device NRF52832_XXAA -if SWD -speed 4000 -autoconnect 1 &
 	telnet localhost 19021
 
